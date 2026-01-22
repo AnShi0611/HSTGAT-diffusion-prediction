@@ -1,0 +1,63 @@
+# Figure 6: t-SNE Visualization of Learned User Embeddings
+# (a) Users colored by influence level (follower count)
+# (b) Users colored by cascade participation role
+
+# (a) User embeddings colored by influence level
+# user_id,tsne_x,tsne_y,follower_count,influence_category
+# Categories: super_influencer (>10K), high_influence (1K-10K), medium_influence (100-1K), low_influence (<100)
+influence_embeddings
+user_001,15.23,28.45,45000,super_influencer
+user_002,14.89,27.12,38000,super_influencer
+user_003,16.45,29.78,52000,super_influencer
+user_004,15.67,26.89,41000,super_influencer
+user_005,14.12,28.01,35000,super_influencer
+user_006,8.45,22.34,5600,high_influence
+user_007,9.12,21.78,4200,high_influence
+user_008,7.89,23.45,6800,high_influence
+user_009,8.78,20.67,3500,high_influence
+user_010,9.56,22.89,7200,high_influence
+user_011,7.23,21.12,2800,high_influence
+user_012,8.01,23.01,5100,high_influence
+user_013,-2.34,12.45,450,medium_influence
+user_014,-1.89,11.23,380,medium_influence
+user_015,-3.12,13.67,520,medium_influence
+user_016,-2.67,10.89,290,medium_influence
+user_017,-1.45,12.01,410,medium_influence
+user_018,-3.45,11.56,340,medium_influence
+user_019,-12.34,-5.67,45,low_influence
+user_020,-11.89,-6.23,32,low_influence
+user_021,-13.12,-4.89,58,low_influence
+user_022,-12.67,-5.12,41,low_influence
+user_023,-11.45,-6.78,27,low_influence
+user_024,-10.89,-5.45,63,low_influence
+user_025,-13.78,-4.23,38,low_influence
+
+# (b) User embeddings colored by cascade participation role
+# user_id,tsne_x,tsne_y,role
+# Roles: seed_user, active_propagator, occasional_sharer, observer
+role_embeddings
+user_101,-8.45,18.23,seed_user
+user_102,-7.89,19.12,seed_user
+user_103,-9.12,17.67,seed_user
+user_104,-8.01,18.89,seed_user
+user_105,-7.23,17.34,seed_user
+user_106,3.45,8.67,active_propagator
+user_107,4.12,9.23,active_propagator
+user_108,2.89,7.89,active_propagator
+user_109,3.78,8.12,active_propagator
+user_110,4.56,9.67,active_propagator
+user_111,2.23,7.45,active_propagator
+user_112,3.01,8.89,active_propagator
+user_113,12.34,-2.45,occasional_sharer
+user_114,11.89,-3.12,occasional_sharer
+user_115,13.12,-1.89,occasional_sharer
+user_116,12.67,-2.78,occasional_sharer
+user_117,11.45,-3.45,occasional_sharer
+user_118,13.78,-1.23,occasional_sharer
+user_119,-15.67,-12.34,observer
+user_120,-14.89,-13.12,observer
+user_121,-16.12,-11.67,observer
+user_122,-15.23,-12.89,observer
+user_123,-14.45,-13.78,observer
+user_124,-16.45,-11.23,observer
+user_125,-15.01,-12.01,observer

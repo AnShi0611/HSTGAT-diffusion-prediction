@@ -1,0 +1,36 @@
+# Figure 2: Parameter Sensitivity Analysis on Weibo Dataset
+# Each section contains values for different parameter settings
+
+# (a) Embedding Dimension
+embed_dim,MSLE_mean,MSLE_std,Hits10_mean,Hits10_std
+32,1.678,0.028,0.432,0.009
+64,1.567,0.025,0.478,0.008
+128,1.482,0.021,0.510,0.006
+256,1.489,0.022,0.508,0.006
+512,1.512,0.024,0.495,0.007
+
+# (b) Number of Temporal Layers
+num_layers,MSLE_mean,MSLE_std,Hits10_mean,Hits10_std
+1,1.623,0.026,0.467,0.008
+2,1.556,0.024,0.489,0.007
+3,1.512,0.022,0.502,0.006
+4,1.482,0.021,0.510,0.006
+5,1.498,0.022,0.505,0.006
+6,1.523,0.023,0.498,0.007
+
+# (c) Number of Attention Heads
+num_heads,MSLE_mean,MSLE_std,Hits10_mean,Hits10_std
+1,1.589,0.025,0.478,0.008
+2,1.534,0.023,0.495,0.007
+4,1.482,0.021,0.510,0.006
+8,1.501,0.022,0.503,0.006
+16,1.534,0.024,0.489,0.007
+
+# (d) Task Balance Weight (mu)
+mu,MSLE_mean,MSLE_std,Hits10_mean,Hits10_std
+0.1,1.456,0.020,0.489,0.007
+0.2,1.467,0.020,0.498,0.006
+0.3,1.472,0.021,0.503,0.006
+0.5,1.482,0.021,0.510,0.006
+0.7,1.498,0.022,0.512,0.006
+1.0,1.534,0.024,0.508,0.006
